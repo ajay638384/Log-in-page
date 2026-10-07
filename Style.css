@@ -1,1 +1,104 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+p {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0 6px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+    padding: 13px 15px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    font-size: 16px;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+div {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #667eea;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+#signInText {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    input,
+    div {
+        max-width: 100%;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
